@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/form.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <title>Formularz</title>
+</head>
+
+<body>
+    <div class="form">
+    <form class="form_BMI">
+        <fieldset class="form_fieldsetBMI">
+            <legend class="form_BMI--legend">
+                Policz BMI
+            </legend>
+            <label>
+                <span class="form_text">
+                    Twój wzrost:
+                </span>
+                <input class="js-height" type="number" min="1" step="any" required>
+                <br>
+                <span class="form_text">
+                    Twoja waga:
+                </span>
+                <input class="js-weight" type="number" min="1" step="any" required>
+            </label>
+    <p>
+        <button class="form_button">
+            Policz!
+        </button>
+    </p>
+        </fieldset>
+    </form>
+    <p class="form-result">
+        Twoje BMI wynosi:<strong class="js-BMI"></strong>
+    </p>
+    </div>
+</body>
+
+</html>
